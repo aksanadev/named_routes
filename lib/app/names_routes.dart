@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:named_routes/routes/routes.dart';
 
-class NamesRoutes extends StatelessWidget {
-  const NamesRoutes({Key? key}) : super(key: key);
+class NamedRoutes extends StatelessWidget {
+  const NamedRoutes({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -11,6 +11,5 @@ class NamesRoutes extends StatelessWidget {
       initialRoute: Routes.splashScreen,
       routes: Routes.routes,
     );
-
   }
 }

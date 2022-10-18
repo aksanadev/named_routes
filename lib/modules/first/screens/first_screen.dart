@@ -13,17 +13,20 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Column(
-        children: [
-          Text("First Screen"),
-          TextButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed(Routes.secondScreen);
-              },
-              child: Text('Second Screen')),
-        ],
-      )),
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+            child: Column(
+          children: [
+            Text("First Screen"),
+            TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Routes.secondScreen);
+                },
+                child: Text('Second Screen')),
+          ],
+        )),
+      ),
     );
   }
 }
